@@ -32,9 +32,12 @@
               <input
                 id="otp"
                 name="otp"
-                type="text"
+                type="password"
                 required
                 placeholder="*****"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                inputmode="numeric"
+                pattern="[0-9]*"
               />
             </div>
 
